@@ -18,11 +18,11 @@ public class DBConnection {
 
         try{
             Properties props = new Properties();
-            FileInputStream fis = new FileInputStream("config.properties");
+            FileInputStream fis = new FileInputStream("C:/Users/lohit/Desktop/Projects/Internship Projects/Java-JDBC-Employee-Database-App/config.properties");
             props.load(fis);
 
             String dbUrl = props.getProperty("db.url");
-            String dbUser = props.getProperty("db.user");
+            String dbUser = props.getProperty("db.username");
             String dbPassword = props.getProperty("db.password");
 
             connection = DriverManager.getConnection(dbUrl, dbUser, dbPassword);

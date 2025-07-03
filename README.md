@@ -16,6 +16,26 @@ This is a simple Java-based CRUD (Create, Read, Update, Delete) application that
 
 
 ---
+```aiignore
+Java-JDBC-Employee-Database-App/
+│
+├── src/
+│   └── com/
+│       └── lohithpuvvala/
+│           └── employeedb/
+│               ├── DBConnection.java         # Handles MySQL connection via config.properties
+│               ├── Employee.java             # Model class for Employee entity
+│               ├── EmployeeDAO.java          # Data Access Object for all DB operations
+│               └── Main.java                 # Main application with menu-driven UI
+│
+├── config.properties                         # Database credentials (excluded from Git)
+├── README.md                                 # Project overview and usage guide
+├── .gitignore                                # Ignore compiled files and sensitive data
+└── out/                                      # Compiled bytecode output (auto-generated)
+
+
+```
+---
 
 ## 🔧 Database Setup
 
